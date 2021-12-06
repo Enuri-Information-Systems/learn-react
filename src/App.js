@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      {t('description.part2')}
+      {/* {t('description.part2')} */}
+      {t("common:com-description")}
       <button onClick={() => changeLanguage('en')}>EN</button>
       <button onClick={() => changeLanguage('si')}>SI</button>
 

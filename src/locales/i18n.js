@@ -7,35 +7,31 @@ i18n
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
   .use(Backend)
-  .use(LanguageDetector)
+  // .use(LanguageDetector)
   // pass the i18n instance to react-i18next.
   .use(initReactI18next)
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'se',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
-    // resources: {
-    //   en: {
-    //     translation: {
-    //         description: {
-    //             part1: 'Edit <1>src/App.js</1> and save to reload.',
-    //             part2: 'welcome'
-    //           }
-    //     }
-    //   },
-    //   si: {
-    //     translation: {
-    //         description: {
-    //             part1: 'Edit <1>src/App.js</1> and save to reload.',
-    //             part2: 'Ayubowan'
-    //           }
-    //     }
-    //   }
-    // }
+    lng:"en",
+    ns:["common","header","footer"],
+
+    backend:{
+      loadPath: 'https://borsdatadevresources.blob.core.windows.net/locales/landing/{{lng}}/{{ns}}.json',
+
+      // request: function (options, url, payload, callback) {
+      //   console.log("options",options);
+      //   console.log("url",url)
+      //   console.log("options",payload);
+      //   // console.log("url",url)
+      // },
+    }
+   
   });
 
 export default i18n;
