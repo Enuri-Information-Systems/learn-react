@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Ratios from "./components/Ratios";
+import PDFHistory from "./components/PDFHistory";
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [page, setPage] = useState("friends");
+
+  const loadStyles = (value) => {
+    if (value === page) {
+      return {
+        display: "block",
+      };
+    } else {
+      return {
+        display: "none",
+      };
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={loadStyles("friends")}>
+        <Ratios />
+      </div>
+      <div style={loadStyles("simpsons")}>
+        <PDFHistory />
+      </div>
+      <button onClick={() => setPage("friends")}>friends</button>
+      <button onClick={() => setPage("simpsons")}>simpson</button>
     </div>
   );
 }
