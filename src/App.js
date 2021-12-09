@@ -3,6 +3,7 @@ import "./App.css";
 import Ratios from "./components/Ratios";
 import PDFHistory from "./components/PDFHistory";
 import React, { useEffect, useState } from "react";
+import Layout from "./components/Layout";
 
 function App() {
   const [page, setPage] = useState("friends");
@@ -20,14 +21,23 @@ function App() {
   };
   return (
     <div className="App">
-      <div style={loadStyles("friends")}>
+      {/* <div style={loadStyles("friends")}>
         <Ratios />
       </div>
       <div style={loadStyles("simpsons")}>
         <PDFHistory />
-      </div>
-      <button onClick={() => setPage("friends")}>friends</button>
-      <button onClick={() => setPage("simpsons")}>simpson</button>
+      </div> */}
+
+      {/* <button onClick={() => setPage("friends")}>friends</button>
+      <button onClick={() => setPage("simpsons")}>simpson</button> */}
+      <Layout>
+        <div style={loadStyles("friends")}>
+          <Ratios />
+        </div>
+        <div style={loadStyles("simpsons")}>
+          <PDFHistory />
+        </div>
+      </Layout>
     </div>
   );
 }
