@@ -12,9 +12,11 @@ function App() {
   return (
     <div className="App">
       {/* {t('description.part2')} */}
-      {t("common:com-description")}
+      {/* {t("description.part2")} */}
       <button onClick={() => changeLanguage('en')}>EN</button>
       <button onClick={() => changeLanguage('si')}>SI</button>
+
+      <Trans i18nKey={"description.part2"} components={{1:<span style={{fontWeight:"bold",color:"red"}}></span>}} />
 
     </div>
   );

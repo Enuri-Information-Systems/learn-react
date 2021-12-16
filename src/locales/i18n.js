@@ -14,23 +14,18 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'se',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
     lng:"en",
-    ns:["common","header","footer"],
+    // ns:["common","header","footer"],
 
-    backend:{
-      loadPath: 'https://borsdatadevresources.blob.core.windows.net/locales/landing/{{lng}}/{{ns}}.json',
+    // backend:{
+    //   loadPath: 'https://borsdatadevresources.blob.core.windows.net/locales/landing/{{lng}}/{{ns}}.json',
 
-      // request: function (options, url, payload, callback) {
-      //   console.log("options",options);
-      //   console.log("url",url)
-      //   console.log("options",payload);
-      //   // console.log("url",url)
-      // },
-    }
+    
+    // }
    
   });
 
