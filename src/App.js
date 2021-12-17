@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import {DynamicSvg} from './components/dynamic-svg';
-const countries = ['jpn','aus','dnk']
 import { useTranslation, Trans } from 'react-i18next';
+import {ReactComponent as Suitcase} from "../src/assets/suitcase.svg";
+import {ReactComponent as SuitcaseActive} from "../src/assets/suitcase-active.svg";
+const countries = ['jpn','aus','dnk']
+
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -13,17 +16,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        {countries.map(country=>{
-          return (<DynamicSvg name={country} />)
-        })}
-      </header>
-      {/* {t('description.part2')} */}
-      {/* {t("description.part2")} */}
-      <button onClick={() => changeLanguage('en')}>EN</button>
-      <button onClick={() => changeLanguage('si')}>SI</button>
+      <div className='icon'>
+     <Suitcase />
+     <SuitcaseActive/>
 
-      <Trans i18nKey={"description.part2"} components={{1:<span style={{fontWeight:"bold",color:"red"}}></span>}} />
+      </div>
 
     </div>
   );
