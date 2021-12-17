@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.285" height="20" viewBox="0 0 34.285 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2703" data-name="Rectangle 2703" width="34.285" height="20" transform="translate(108.597 630.141)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="NORWAY" transform="translate(-108.597 -630.141)">
+    <g id="Group_2788" data-name="Group 2788">
+      <g id="Group_2787" data-name="Group 2787">
+        <g id="Group_2786" data-name="Group 2786" clip-path="url(#clip-path)">
+          <rect id="Rectangle_2698" data-name="Rectangle 2698" width="34.285" height="20" transform="translate(108.597 630.141)" fill="#e73233" style="isolation: isolate"/>
+          <rect id="Rectangle_2699" data-name="Rectangle 2699" width="4.999" height="20" transform="translate(116.098 630.141)" fill="#fff"/>
+          <rect id="Rectangle_2700" data-name="Rectangle 2700" width="34.285" height="5" transform="translate(108.597 637.642)" fill="#fff"/>
+          <rect id="Rectangle_2701" data-name="Rectangle 2701" width="2.5" height="20" transform="translate(117.347 630.141)" fill="#223464" style="isolation: isolate"/>
+          <rect id="Rectangle_2702" data-name="Rectangle 2702" width="34.285" height="2.5" transform="translate(108.597 638.892)" fill="#223464" style="isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

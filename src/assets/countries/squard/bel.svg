@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.279" height="20" viewBox="0 0 34.279 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2637" data-name="Rectangle 2637" width="34.279" height="20" transform="translate(109.873 51.792)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="BELGIUM" transform="translate(-109.873 -51.792)">
+    <g id="Group_2641" data-name="Group 2641">
+      <g id="Group_2640" data-name="Group 2640">
+        <g id="Group_2639" data-name="Group 2639" clip-path="url(#clip-path)">
+          <rect id="Rectangle_2634" data-name="Rectangle 2634" width="11.426" height="20" transform="translate(109.873 51.792)"/>
+          <rect id="Rectangle_2635" data-name="Rectangle 2635" width="11.426" height="20" transform="translate(121.299 51.792)" fill="#ffe936"/>
+          <rect id="Rectangle_2636" data-name="Rectangle 2636" width="11.426" height="20" transform="translate(132.726 51.792)" fill="#ff0f21"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

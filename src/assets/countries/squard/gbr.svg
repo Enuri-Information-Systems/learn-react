@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.288" height="20" viewBox="0 0 34.288 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2671" data-name="Rectangle 2671" width="34.288" height="20" transform="translate(109.229 340.043)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="UNITED_KINGDOM" data-name="UNITED KINGDOM" transform="translate(-109.229 -340.043)">
+    <g id="Group_2765" data-name="Group 2765">
+      <g id="Group_2764" data-name="Group 2764">
+        <g id="Group_2763" data-name="Group 2763" clip-path="url(#clip-path)">
+          <rect id="Rectangle_2670" data-name="Rectangle 2670" width="34.288" height="20" transform="translate(109.229 340.043)" fill="#fff"/>
+          <path id="Path_10220" data-name="Path 10220" d="M132.187,347.274l11.329-6.342v-.889h-.781l-12.918,7.231Z" fill="#e30020"/>
+          <path id="Path_10221" data-name="Path 10221" d="M131.652,353.213l11.864,6.639v-1.327l-9.494-5.313Z" fill="#e30020"/>
+          <path id="Path_10222" data-name="Path 10222" d="M109.229,341.565l10.149,5.709h2.371l-12.521-7.036Z" fill="#e30020"/>
+          <path id="Path_10223" data-name="Path 10223" d="M121.212,353.213l-11.983,6.714v.116h2.165l12.19-6.83Z" fill="#e30020"/>
+          <path id="Path_10224" data-name="Path 10224" d="M141.17,340.043h-12v6.723Z" fill="#001f82"/>
+          <path id="Path_10225" data-name="Path 10225" d="M123.865,340.043H111.908l11.957,6.723Z" fill="#001f82"/>
+          <path id="Path_10226" data-name="Path 10226" d="M143.516,347.274v-4.588l-8.144,4.588Z" fill="#001f82"/>
+          <path id="Path_10227" data-name="Path 10227" d="M143.516,357.752v-4.539h-8.144Z" fill="#001f82"/>
+          <path id="Path_10228" data-name="Path 10228" d="M112.586,360.043h11.279v-6.32Z" fill="#001f82"/>
+          <path id="Path_10229" data-name="Path 10229" d="M129.165,360.043H140.48l-11.314-6.32Z" fill="#001f82"/>
+          <path id="Path_10230" data-name="Path 10230" d="M109.229,353.213v4.744l8.427-4.744Z" fill="#001f82"/>
+          <path id="Path_10231" data-name="Path 10231" d="M109.229,347.274h8.427l-8.427-4.751Z" fill="#001f82"/>
+          <path id="Path_10232" data-name="Path 10232" d="M124.925,340.043v8.419h-15.7v3.566h15.7v8.015h3.18v-8.015h15.412v-3.566H128.1v-8.419Z" fill="#e30020"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

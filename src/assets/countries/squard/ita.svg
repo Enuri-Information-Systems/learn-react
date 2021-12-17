@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.287" height="20" viewBox="0 0 34.287 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2683" data-name="Rectangle 2683" width="34.287" height="20" transform="translate(108.698 448.895)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ITALY" transform="translate(-108.698 -448.895)">
+    <g id="Group_2772" data-name="Group 2772">
+      <g id="Group_2771" data-name="Group 2771">
+        <g id="Group_2770" data-name="Group 2770" clip-path="url(#clip-path)">
+          <rect id="Rectangle_2680" data-name="Rectangle 2680" width="11.429" height="20" transform="translate(108.698 448.895)" fill="#009246"/>
+          <rect id="Rectangle_2681" data-name="Rectangle 2681" width="11.429" height="20" transform="translate(120.127 448.895)" fill="#fff"/>
+          <rect id="Rectangle_2682" data-name="Rectangle 2682" width="11.429" height="20" transform="translate(131.555 448.895)" fill="#ce2b37"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

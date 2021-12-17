@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.286" height="20" viewBox="0 0 34.286 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2677" data-name="Rectangle 2677" width="34.286" height="20" transform="translate(109.23 376.396)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ICELAND" transform="translate(-109.23 -376.396)">
+    <g id="Group_2768" data-name="Group 2768">
+      <g id="Group_2767" data-name="Group 2767">
+        <g id="Group_2766" data-name="Group 2766" clip-path="url(#clip-path)">
+          <rect id="Rectangle_2672" data-name="Rectangle 2672" width="34.286" height="20" transform="translate(109.23 376.396)" fill="#00349a"/>
+          <rect id="Rectangle_2673" data-name="Rectangle 2673" width="4.444" height="20" transform="translate(117.008 376.396)" fill="#fbfdff" style="isolation: isolate"/>
+          <rect id="Rectangle_2674" data-name="Rectangle 2674" width="34.286" height="4.445" transform="translate(109.23 384.174)" fill="#fbfdff" style="isolation: isolate"/>
+          <rect id="Rectangle_2675" data-name="Rectangle 2675" width="2.224" height="20" transform="translate(118.119 376.396)" fill="#d8251d"/>
+          <rect id="Rectangle_2676" data-name="Rectangle 2676" width="34.286" height="2.223" transform="translate(109.23 385.285)" fill="#d8251d"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
