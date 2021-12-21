@@ -5,11 +5,12 @@ export default function PDFHistory() {
   useEffect(() => {
     const friends = ["Homer", "Marge", "Lisa", "Bart"];
     const item = friends[Math.floor(Math.random() * friends.length)];
+    console.log("Simpsons calling...",item);
     setName(item);
   }, []);
   return (
     <div>
-      <h1>PDF History {name}</h1>
+      <h1>The simpson {name}</h1>
     </div>
   );
 }
