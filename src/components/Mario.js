@@ -10,7 +10,7 @@ export default function Mario() {
     }, []);
     return (
         <div>
-            <h1>Mario {name}</h1>
+            <h1>Game character {name}</h1>
         </div>
     )
 }

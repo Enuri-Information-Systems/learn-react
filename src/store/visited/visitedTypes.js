@@ -1,0 +1,2 @@
+export const ADD_TO_VISITED = "ADD_TO_VISITED";
+export const CLEAR_VISITED = "CLEAR_VISITED";
