@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
+import options from "./options";
 function App() {
+  // const options = {
+  //   chart: {
+  //     type: 'column'
+  // },
+  //   title: {
+  //     text: "My chart",
+  //   },
+  //   colors: ['#028ba8', '#ff8134', 'green', ],
+  //   series: [
+  //     {
+  //       data: [1, 2, 3],
+  //     },
+  //     {
+  //       data: [1, 2, 3],
+  //     },
+  //     {
+  //       data: [2,4, 5],
+  //     },
+  //   ],
+  // };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
   );
 }
