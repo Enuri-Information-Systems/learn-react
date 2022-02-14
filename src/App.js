@@ -15,6 +15,7 @@ function App() {
        <RichTextEditor
         value={value}
         onChange={onChange}
+        className="editor"
       />
     </div>
   );
