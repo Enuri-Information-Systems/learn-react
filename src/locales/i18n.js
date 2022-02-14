@@ -19,13 +19,13 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
     lng:"en",
-    // ns:["common","header","footer"],
+    ns:["common","header","footer","instrumentbasic"],
 
-    // backend:{
-    //   loadPath: 'https://borsdatadevresources.blob.core.windows.net/locales/landing/{{lng}}/{{ns}}.json',
+    backend:{
+      loadPath: 'https://borsdatadevresources.blob.core.windows.net/locales/landing/{{lng}}/{{ns}}.json',
 
     
-    // }
+    }
    
   });
 

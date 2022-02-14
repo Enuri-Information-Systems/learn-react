@@ -11,12 +11,27 @@ function App() {
 
   return (
     <div className="App">
-      {/* {t('description.part2')} */}
       {/* {t("description.part2")} */}
       <button onClick={() => changeLanguage('en')}>EN</button>
-      <button onClick={() => changeLanguage('si')}>SI</button>
+      <button onClick={() => changeLanguage('se')}>SE</button>
 
-      <Trans i18nKey={"description.part2"} components={{1:<span style={{fontWeight:"bold",color:"red"}}></span>}} />
+      <div>
+        <h1 className='mon'>
+      Loading from Translations - Montserrat / Normalized {t("instrumentbasic:ib-market-cap").normalize()}
+
+        </h1>
+        <h1>Hard coded / default font - Börsvärde</h1>
+        <h1 className='mon'>Hard coded / Montserrat - Börsvärde</h1>
+        <h1 >Hard coded / Normalized - {String("Börsvärde").normalize()}</h1>
+        <h1 >Hard coded / Normalized / Montserrat- {String("Börsvärde").normalize()}</h1>
+        <h1 className='san'>Hard coded / Normalized / sans serif- {String("Börsvärde").normalize()}</h1>
+
+
+
+
+      </div>
+      
+      {/* <Trans i18nKey={"instrumentbasic:ib-market-cap"} components={{1:<span style={{fontWeight:"bold",color:"red"}}></span>}} /> */}
 
     </div>
   );
