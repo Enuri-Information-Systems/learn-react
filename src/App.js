@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import RichTextEditor from 'react-rte';
 function App() {
@@ -9,6 +9,11 @@ function App() {
     setValue(value);
    
   };
+useEffect(()=>{
+  setValue(RichTextEditor.createValueFromString(description,'html'))
+},[])
+  
+  const description = `<b>daruwa</b>`
   return (
     <div className="App">
      
@@ -17,6 +22,8 @@ function App() {
         onChange={onChange}
         className="editor"
       />
+
+      gttt
     </div>
   );
 }
