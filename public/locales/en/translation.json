@@ -1,5 +1,7 @@
 {
-    "description": {
-        "part2": "Your <1>email</1> is sent."
-    }
+  "auth": {
+    "forget": "forget",
+    "login": "Login",
+    "signUp": "sign up"
+  }
 }
