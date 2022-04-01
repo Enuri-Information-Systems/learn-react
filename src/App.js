@@ -26,9 +26,9 @@ function highlightPattern(text, pattern) {
 export default function Test() {
   const [searchText, setSearchText] = useState('');
 
-  const textRenderer = useMemo((textItem) => {
-    return highlightPattern(textItem.str, searchText);
-  }, [searchText]);
+  // const textRenderer = useMemo((textItem) => {
+  //   return highlightPattern(textItem.str, searchText);
+  // }, [searchText]);
 
   function onChange(event) {
     setSearchText(event.target.value);
