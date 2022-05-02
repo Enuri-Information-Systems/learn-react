@@ -1,54 +1,28 @@
 import React, { useMemo, useState } from 'react';
-// import { Document, Page } from 'react-pdf';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-
-import samplePDF from './test.pdf';
-
-// https://gist.github.com/wojtekmaj/f265f55e89ccb4ce70fbd2f8c7b1d95d
-function highlightPattern(text, pattern) {
-  const splitText = text.split(pattern);
-
-  if (splitText.length <= 1) {
-    return text;
-  }
-
-  const matches = text.match(pattern);
-
-  return splitText.reduce((arr, element, index) => (matches[index] ? [
-    ...arr,
-    element,
-    <mark key={index}>
-      {matches[index]}
-    </mark>,
-  ] : [...arr, element]), []);
-}
-
+import { Worker } from '@react-pdf-viewer/core';
+import { Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 export default function Test() {
-  const [searchText, setSearchText] = useState('');
-
-  // const textRenderer = useMemo((textItem) => {
-  //   return highlightPattern(textItem.str, searchText);
-  // }, [searchText]);
-
-  function onChange(event) {
-    setSearchText(event.target.value);
-  }
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  
 
   return (
-    <>
-      <Document
-        file={samplePDF}
-        // onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page
-          pageNumber={1}
-          // customTextRenderer={textRenderer}
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.js">
+    <div
+        style={{
+            height: '750px',
+            width: '900px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        }}
+    >
+        <Viewer
+            fileUrl={`/test.pdf`}
+            plugins={[defaultLayoutPluginInstance]}
         />
-      </Document>
-      <div>
-        <label htmlFor="search">Search:</label>
-        <input type="search" id="search" value={searchText} onChange={onChange} />
-      </div>
-    </>
+    </div>
+</Worker>
   );
 }
