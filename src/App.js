@@ -3,14 +3,14 @@ import "./App.css";
 import { Formik, Form, Field } from "formik";
 import React, { useState, useEffect, useRef } from "react";
 import * as Yup from "yup";
-import { Fragment } from "react/cjs/react.production.min";
-import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import MomentUtils from "@date-io/moment";
-import { TimePicker, DateTimePicker } from "@material-ui/pickers";
-import { DatePicker } from 'formik-material-ui';
+
+import { TextField } from "@mui/material";
+
+import { Autocomplete } from "formik-mui";
+const options = ["Baseball", "Basket ball", "Hokey"];
 function App() {
   const [initialValues, setInitialValues] = useState({
-    pickedDate: "",
+    category: "",
   });
   const validationSchema = Yup.object().shape({
     pickedDate: Yup.string().required("Country is required"),
@@ -24,55 +24,42 @@ function App() {
 
   const datePicker = useRef();
   return (
-    <MuiPickersUtilsProvider utils={MomentUtils}>
-      <div className="App">
-        <header className="App-header">
-          <Formik
-            initialValues={initialValues}
-            onSubmit={() => {}}
-            validationSchema={validationSchema}
-            enableReinitialize
-          >
-            {({
-              isValid,
-              dirty,
-              handleChange,
-              handleBlur,
-              values,
-              errors,
-              setErrors,
-            }) => {
-              return (
-                <Form>
-                  {/* <Field
-                  type="date"
-                  name="country"
-                  placeholder="dd-mm-yyyy"
-                  min="1997-01-01"
-                  max="2022-03-28"
-                  value={values.country}
-                 
-                /> */}
+    <div className="App">
+      <header className="App-header">
+        <Formik
+          initialValues={initialValues}
+          onSubmit={() => {}}
+          validationSchema={validationSchema}
+          enableReinitialize
+        >
+          {({
+            isValid,
+            dirty,
+            handleChange,
+            handleBlur,
+            values,
+            errors,
+            setErrors,
+          }) => {
+            return (
+              <Form>
+                Values : {JSON.stringify(values)}
+                {/* initialValues : {JSON.stringify(initialValues)} */}
 
-                  {/* 27-03-2022 */}
-
-                  {/* <p>Errors : {JSON.stringify(errors)}</p> */}
-                  <p>Picked date : {JSON.stringify(values.country)}</p>
-
-                  <Field
-                     component={DatePicker}
-                     label="label"
-                     name="pickedDate"
-                     textField={{ helperText: 'Helper text' }}
-                     inputFormat="MM/dd/yyyy"
-                  />
-                </Form>
-              );
-            }}
-          </Formik>
-        </header>
-      </div>
-    </MuiPickersUtilsProvider>
+                <Field
+                  
+                  freeSolo
+                  options={options}
+                  component={Autocomplete}
+                  name="category"
+                  renderInput={(params) => <TextField label="Category" {...params} />}
+                />
+              </Form>
+            );
+          }}
+        </Formik>
+      </header>
+    </div>
   );
 }
 
